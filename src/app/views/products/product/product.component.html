@@ -1,0 +1,22 @@
+<section class="cards">
+  <div class="container justify-content-center">
+    <h1 class=" text-center my-5 fw-bold fs-2 title-2">{{product.title}}</h1>
+
+      <div class="row g-3 justify-content-center">
+        <div class="col-lg-8 pb-5">
+          <div class="card">
+            <img src="{{product.image}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-3">{{product.price + ',00 руб'}}</h5>
+              <p class="card-text">{{product.description}}</p>
+              <a class="btn btn-primary px-5 fs-5" routerLink="/order" [queryParams]="{product: product.title}">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div *ngIf="loading" class="loader-bg">
+      <div class="loader"></div>
+    </div>
+    </div>
+
+</section>

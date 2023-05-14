@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Arial;
+  src: url("./assets/fonts/ArialMT.ttf");
+}
+
+@font-face {
+  font-family: ArialBold;
+  src: url("./assets/fonts/Arial-BoldMT.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: Arial, sans-serif!important;
+  background: #F8F9FA;
+  font-weight: 400;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.invalid-feedback {
+  display: block!important;
+}
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.accordion-button::after{
+  background-image: url("./assets/icon/vector2.png")!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/icon/vector2.png")!important;
+}
+
+
+
+//adaptive
+@media screen and (max-width: 1440px) {
+  .card {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .questions .container {
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 1220px) {
+  .card .card-text {
+    //height: 72px;
+  }
+  .title{
+    font-size: 30px!important;
+    margin-bottom: 30px!important;
+  }
+  .text{
+    margin-bottom: 30px!important;
+  }
+
+}
+
+@media screen and (max-width: 995px) {
+  .card .card-text {
+    //height: 85px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  .questions .col-8 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .title{
+    font-size: 20px!important;
+  }
+}
+
+@media screen and (max-width: 520px){
+
+}
+
+@media screen and (max-width: 465px){
+  .title{
+    font-size: 15px!important;
+    margin-bottom: 20px!important;
+  }
+  .text{
+    font-size: 10px;
+    margin-bottom: 20px!important;
+  }
+  .title-2{
+    font-size: 20px!important;
+  }
+}
+
+
+
+/*loader*/
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #0d6efd;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
