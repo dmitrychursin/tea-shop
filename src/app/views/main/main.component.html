@@ -17,85 +17,77 @@
     <div class="row justify-content-center">
       <div class="col-8">
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item mb-3 border-0 bg-transparent">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-primary text-white rounded-3" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                      aria-controls="flush-collapseOne">
-                Собираете ли вы подарочные боксы?
-              </button>
+        <div ngbAccordion class="mb-2">
+          <div ngbAccordionItem="first">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class="bg-primary text-white">Собираете ли вы подарочные боксы?</button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                 aria-labelledby="flush-headingOne"
-                 data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body"> Да, у нас есть такая услуга. Мы можем собрать подарочный бокс
-                на любой
-                вкус, объем и стоимость!
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+                </ng-template>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="accordion-item mb-3 border-0 bg-transparent">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed bg-primary text-white rounded-3" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                      aria-controls="flush-collapseTwo">
-                Сколько у вас разновидностей чая?
-              </button>
+        <div ngbAccordion class="mb-2">
+          <div ngbAccordionItem="second">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class="bg-primary text-white" >Сколько у вас разновидностей чая?</button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                 aria-labelledby="flush-headingTwo"
-                 data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Очень много!</div>
-            </div>
-          </div>
-
-          <div class="accordion-item mb-3 border-0 bg-transparent">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed bg-primary text-white rounded-3" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree">
-                В какой срок осуществляется доставка?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                 aria-labelledby="flush-headingThree"
-                 data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">В течении 30 минут!</div>
-            </div>
-          </div>
-
-          <div class="accordion-item mb-3 border-0 bg-transparent">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed bg-primary text-white rounded-3" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                      aria-controls="flush-collapseFour">
-                У вас обновляется ассортимент?
-              </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                 aria-labelledby="flush-headingFour"
-                 data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Ассортимент обновляется каждый раз когда появляется новый
-                вкус!
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Очень много!
+                </ng-template>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="accordion-item mb-3 border-0 bg-transparent">
-            <h2 class="accordion-header" id="flush-headingFive">
-              <button class="accordion-button collapsed bg-primary text-white rounded-3" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                      aria-controls="flush-collapseFive">
-                Какого объема у вас пачки чая?
-              </button>
+        <div ngbAccordion class="mb-2">
+          <div ngbAccordionItem="third">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class="bg-primary text-white">В какой срок осуществляется доставка?</button>
             </h2>
-            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                 aria-labelledby="flush-headingFive"
-                 data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Объём выбираете вы сами!</div>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  В течении 30 минут!
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div ngbAccordion class="mb-2">
+          <div ngbAccordionItem="fourth">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class="bg-primary text-white">У вас обновляется ассортимент?</button>
+            </h2>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  обновляется каждый раз когда появляется новый вкус!
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div ngbAccordion class="mb-2">
+          <div ngbAccordionItem="fifth">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class="bg-primary text-white">Какого объема у вас пачки чая?</button>
+            </h2>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Объём выбираете вы сами!
+                </ng-template>
+              </div>
             </div>
           </div>
         </div>
