@@ -17,8 +17,8 @@
     <div class="row justify-content-center">
       <div class="col-8">
 
-        <div ngbAccordion class="mb-2">
-          <div ngbAccordionItem="first">
+        <div ngbAccordion #accordion="ngbAccordion" [closeOthers]="true">
+          <div ngbAccordionItem="first" class="mb-3 border-0">
             <h2 ngbAccordionHeader>
               <button ngbAccordionButton class="bg-primary text-white">Собираете ли вы подарочные боксы?</button>
             </h2>
@@ -30,12 +30,10 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div ngbAccordion class="mb-2">
-          <div ngbAccordionItem="second">
+          <div ngbAccordionItem="second" class="mb-3 border-0">
             <h2 ngbAccordionHeader>
-              <button ngbAccordionButton class="bg-primary text-white" >Сколько у вас разновидностей чая?</button>
+              <button ngbAccordionButton class="bg-primary text-white">Сколько у вас разновидностей чая?</button>
             </h2>
             <div ngbAccordionCollapse>
               <div ngbAccordionBody>
@@ -45,10 +43,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div ngbAccordion class="mb-2">
-          <div ngbAccordionItem="third">
+          <div ngbAccordionItem="third" class="mb-3 border-0">
             <h2 ngbAccordionHeader>
               <button ngbAccordionButton class="bg-primary text-white">В какой срок осуществляется доставка?</button>
             </h2>
@@ -60,25 +56,21 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div ngbAccordion class="mb-2">
-          <div ngbAccordionItem="fourth">
+          <div ngbAccordionItem="fourth" class="mb-3 border-0">
             <h2 ngbAccordionHeader>
               <button ngbAccordionButton class="bg-primary text-white">У вас обновляется ассортимент?</button>
             </h2>
             <div ngbAccordionCollapse>
               <div ngbAccordionBody>
                 <ng-template>
-                  обновляется каждый раз когда появляется новый вкус!
+                  Обновляется каждый раз когда появляется новый вкус!
                 </ng-template>
               </div>
             </div>
           </div>
-        </div>
 
-        <div ngbAccordion class="mb-2">
-          <div ngbAccordionItem="fifth">
+          <div ngbAccordionItem="fifth" class="border-0">
             <h2 ngbAccordionHeader>
               <button ngbAccordionButton class="bg-primary text-white">Какого объема у вас пачки чая?</button>
             </h2>
